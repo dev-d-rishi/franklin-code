@@ -24,11 +24,11 @@ export default function Process() {
                 <p className="text-xl text-[#6B6B6B] max-w-sm">
                   A transparent, agile process designed to deliver results rapidly without compromising quality.
                 </p>
-                <div className="mt-8">
+                {/* <div className="mt-8">
                   <button className="px-6 py-3 border border-[#1C1C1C] rounded-full hover:bg-[#1C1C1C] hover:text-white transition-colors">
                     Download Capability Deck
                   </button>
-                </div>
+                </div> */}
               </RevealOnScroll>
             </div>
           </div>

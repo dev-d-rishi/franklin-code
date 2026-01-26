@@ -55,6 +55,22 @@ const projects = [
     image: "/work/abushakra.jpg",
     href: "/work/abushakra",
   },
+  {
+    id: "touq",
+    title: "Touq",
+    category: "Real Estate Rental & Management",
+    year: "2025",
+    description:
+      "Touq is a property rental and management platform that connects renters with landlords directly — making the process of finding, listing, and managing properties simple and free of subscription fees. Users can browse listings, filter by key criteria, and communicate with owners instantly. ",
+    highlights: [
+      "Peer-to-peer connection between renters & landlords",
+      "Filterable listings by location, price & features",
+      "Free property listing & built-in messaging system",
+    ],
+    tags: ["PropTech", "Real Estate", "Mobile Platform"],
+    image: "/work/touq.jpg",
+    href: "/work/touq",
+  },
 ];
 
 export default function Work() {
