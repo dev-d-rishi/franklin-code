@@ -8,84 +8,52 @@ import { RevealOnScroll } from "./RevealOnScroll";
 
 const projects = [
   {
-    id: "nexus-finance",
-    title: "Nexus Finance",
-    category: "FinTech Platform",
+    id: "leadherself",
+    title: "LeadHerself",
+    category: "Professional Growth App",
+    year: "2025",
+    description:
+      "LeadHerself is an interactive self-leadership app designed to help early-career women and non-binary professionals build confidence, grow career skills, and shape meaningful paths forward with guided journeys and practical actions.  [oai_citation:0‡LeadHerself](https://www.leadherself.com/?utm_source=chatgpt.com)",
+    highlights: [
+      "Guided self-leadership journeys tailored to personal goals",
+      "Skills building through assessments and real-world exercises",
+      "Research-backed tools to grow confidence and clarity",
+    ],
+    tags: ["Professional Development", "Mobile App", "Career Growth"],
+    image: "/work/leadherself.jpg",
+    href: "/work/leadherself",
+  },
+  {
+    id: "wooftag",
+    title: "Wooftag",
+    category: "Pet Identification System",
     year: "2024",
     description:
-      "A wealth management dashboard built for modern investors—real-time insights, portfolio allocation, and clean performance tracking.",
+      "Wooftag offers a modern, battery-free pet tag system paired with a companion app that stores and displays key pet info via QR/NFC scan — making reunification faster and less stressful for pets and owners.  [oai_citation:1‡Wooftag](https://wooftag.eu/?utm_source=chatgpt.com)",
     highlights: [
-      "Real-time portfolio analytics",
-      "Interactive charts + KPI panels",
-      "Fast UI with modular design system",
+      "Create digital profiles for pets with contact & health data",
+      "Free app with real-time updates when tags are scanned",
+      "Improves safety and reunification without battery or subscription",
     ],
-    tags: ["Product Design", "Next.js", "Dashboard UI"],
-    image: "https://picsum.photos/id/48/1400/1000",
-    href: "/work/nexus-finance",
+    tags: ["Pet Safety", "NFC/QR Tech", "Mobile UX"],
+    image: "/work/wooftag.jpg",
+    href: "/work/wooftag",
   },
   {
-    id: "lumina-health",
-    title: "Lumina Health",
-    category: "AI Diagnostic Tool",
-    year: "2024",
+    id: "abushakra",
+    title: "Abu Shakra",
+    category: "Luxury Retail & Lifestyle",
+    year: "2025",
     description:
-      "A clinical interface for AI-assisted imaging workflows—built for speed, clarity, and confidence in decision-making.",
+      "Abu Shakra is a leading luxury goods retail experience featuring high-end brands across fragrances, cosmetics, fashion accessories and more — paired with an app for shopping & offers.  [oai_citation:2‡Google Play](https://play.google.com/store/apps/details?hl=en_IN&id=com.abushakranewproject&utm_source=chatgpt.com)",
     highlights: [
-      "Doctor-first UX",
-      "Case review + history timeline",
-      "Annotation-ready layout",
+      "Browse top global luxury brands in one place",
+      "Weekly arrivals and special offers via app",
+      "Easy product discovery, sort & search experience",
     ],
-    tags: ["UX Strategy", "React", "AI Workflow"],
-    image: "https://picsum.photos/id/60/1400/1000",
-    href: "/work/lumina-health",
-  },
-  {
-    id: "vantage-commerce",
-    title: "Vantage Commerce",
-    category: "E-Commerce Experience",
-    year: "2023",
-    description:
-      "A luxury shopping redesign focused on conversion, premium visuals, and a seamless checkout experience.",
-    highlights: [
-      "Modern product discovery",
-      "High-converting PDP layout",
-      "Optimized checkout funnel",
-    ],
-    tags: ["Frontend", "Motion UI", "Conversion"],
-    image: "https://picsum.photos/id/20/1400/1000",
-    href: "/work/vantage-commerce",
-  },
-  {
-    id: "orbit-saas",
-    title: "Orbit SaaS",
-    category: "Productivity Suite",
-    year: "2023",
-    description:
-      "A remote team workspace for planning, tracking, and shipping faster—designed for daily use at scale.",
-    highlights: [
-      "Kanban + sprint planning",
-      "Team roles + permissions",
-      "Component-driven UI system",
-    ],
-    tags: ["Design System", "Full Stack", "SaaS UI"],
-    image: "https://picsum.photos/id/119/1400/1000",
-    href: "/work/orbit-saas",
-  },
-  {
-    id: "atlas-logistics",
-    title: "Atlas Logistics",
-    category: "Fleet & Ops Dashboard",
-    year: "2022",
-    description:
-      "A dispatch dashboard for managing fleets, routes, and deliveries—built for operations teams under pressure.",
-    highlights: [
-      "Live tracking + route overview",
-      "Ops-friendly information density",
-      "Performance monitoring panels",
-    ],
-    tags: ["Dashboard", "Maps UI", "Operations"],
-    image: "https://picsum.photos/id/1011/1400/1000",
-    href: "/work/atlas-logistics",
+    tags: ["E-Commerce", "Luxury Brands", "Mobile Shopping"],
+    image: "/work/abushakra.jpg",
+    href: "/work/abushakra",
   },
 ];
 
@@ -110,7 +78,7 @@ export default function Work() {
 
     const observer = new IntersectionObserver(
       observerCallback,
-      observerOptions
+      observerOptions,
     );
     const elements = document.querySelectorAll(".project-block");
     elements.forEach((el) => observer.observe(el));
@@ -122,6 +90,7 @@ export default function Work() {
 
   return (
     <section
+      id="work"
       ref={sectionRef}
       className="bg-[#FEFAE0] text-[#1C1C1C] py-24 px-6 md:px-12"
     >

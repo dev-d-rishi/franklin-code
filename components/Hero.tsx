@@ -59,7 +59,15 @@ export default function Hero() {
               <div className="absolute inset-0 bg-[#333] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out" />
             </button>
 
-            <button className="group px-8 py-4 rounded-full border border-[#1C1C1C]/20 text-[#1C1C1C] font-semibold hover:bg-[#1C1C1C]/5 transition-all ">
+            <button
+              onClick={() => {
+                document.getElementById("work")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+              className="group px-8 py-4 rounded-full border border-[#1C1C1C]/20 text-[#1C1C1C] font-semibold hover:bg-[#1C1C1C]/5 transition-all "
+            >
               View Work
             </button>
           </div>
